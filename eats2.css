@@ -1,33 +1,41 @@
-body{
+/* Базовые стили */
+body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.container{
+
+.container {
     width: 100%;
     max-width: 956px;
     margin: 0 auto;
+    padding: 0 16px; /* Добавляем отступы по бокам для мобильных устройств */
 }
-.container.conthead{
+
+.container.conthead {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header{
+
+.header {
     height: 72px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
-.logotext{
+
+.logotext {
     text-transform: uppercase;
     font-size: 25px;
     color: #000;
     font-weight: 600;
 }
-.logotext span{
+
+.logotext span {
     color: #57AD56;
 }
-.navigation button{
+
+.navigation button {
     width: 78px;
     height: 40px;
     border: 1px solid #E0E0E0;
@@ -35,27 +43,32 @@ body{
     background-color: #fff;
     margin: auto 27px auto 0;
 }
-.navigation img{
+
+.navigation img {
     display: block;
     width: 30px;
     height: 30px;
     margin: auto 0;
 }
-.headbtn:hover{
+
+.headbtn:hover {
     background-color: #1D1D1D;
     color: #fff;
     transition: 0.2s;
 }
-.headbtn{
+
+.headbtn {
     font-size: 13px;
     font-weight: 500;
     color: #1D1D1D;
     margin: auto;
 }
-.navigation{
+
+.navigation {
     display: flex;
 }
-.show{
+
+.show {
     display: flex;
     align-items: center;
     width: 100%;
@@ -63,7 +76,8 @@ body{
     background-size: cover;
     background-image: url(d42ea9bbf7aff297c2e1eb5e5f3b7fa6-w1080-87.jpg);
 }
-.pushkin{
+
+.pushkin {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -71,62 +85,72 @@ body{
     height: 204px;
     background-color: #fff;
 }
-.pushkin p{
+
+.pushkin p {
     font-weight: 400;
     font-size: 36px;
     text-align: center;
     line-height: 42px;
     margin: 0;
 }
-.info{
+
+.info {
     display: flex;
     justify-content: space-between;
     width: 300px;
     margin: 0 auto;
     align-items: flex-end;
 }
-.info p{
+
+.info p {
     font-size: 14px;
     font-weight: 400;
     color: #626262;
     line-height: 32px;
     margin: 0;
 }
-.info div{
+
+.info div {
     width: 100px;
     height: 32px;
     border-radius: 16px;
     background-color: #262626;
 }
-.time p{
+
+.time p {
     font-size: 13px;
     font-weight: 400;
     color: #fff;
     margin: auto;
     line-height: 30px;
 }
-.menu_chose{
+
+.menu_chose {
     display: flex;
     align-items: center;
     height: 80px;
     width: 100%;
-    border-bottom: 1px solid rgba(117, 117, 117, 0.2);;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
 }
-.contmenu{
+
+.contmenu {
     display: flex;
 }
-.contmenu a{
+
+.contmenu a {
     text-decoration: none;
     color: #626262;
     margin-right: 40px;
     font-size: 16px;
     font-weight: 400;
 }
-.contmenu a:hover{
+
+.contmenu a:hover {
     color: #327430;
     transition: 0.2s;
 }
-.item{
+
+.item {
     display: flex;
     justify-content: space-between;
     width: 470px;
@@ -136,33 +160,39 @@ body{
     border-radius: 2px;
     margin-bottom: 39px;
 }
-.item:hover{
+
+.item:hover {
     background-color: rgba(117, 117, 117, 0.04);
     transition: 0.2s;
 }
-.menu-text{
+
+.menu-text {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.menu-img img{
+
+.menu-img img {
     margin: 0;
     width: 170px;
     height: 160px;
 }
-.main-menu{
+
+.main-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.one{
+
+.one {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 4px;
 }
-.two{
+
+.two {
     font-weight: 400;
     font-size: 13px;
     line-height: 21px;
@@ -170,63 +200,76 @@ body{
     opacity: 0;
     margin: 0;
 }
-.three{
+
+.three {
     font-weight: 500;
     font-size: 15px;
     line-height: 21px;
     top: 100%;
     margin-bottom: 16px;
 }
-.two:hover{
+
+.two:hover {
     opacity: 1;
     transition: 0.2s;
 }
-.logotext-bl{
+
+.logotext-bl {
     color: #fff;
 }
-.end{
+
+.end {
     width: 100%;
     min-height: 502px;
     max-height: 862px;
     background-color: #262626;
 }
-.end-head{
+
+.end-head {
     padding-top: 56px;
 }
-.end-head::after{
+
+.end-head::after {
     content: "";
     display: block;
     height: 0.5px;
     width: 100%;
     background-color: #fff;
 }
-.cum{
+
+.cum {
     width: 80px;
 }
-.cum img{
+
+.cum img {
     width: 18px;
     height: 18px;
 }
-.hash{
+
+.hash {
     color: #49A144;
     display: inline-block;
 }
-.ue{
+
+.ue {
     color: #ffffff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }
-.greenwhite{
+
+.greenwhite {
     margin-bottom: 20px;
 }
-.icons{
+
+.icons {
     width: 80px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
-.dropbtn{
+
+.dropbtn {
     margin-top: 32px;
     margin-bottom: 33px;
     background-color: #3B3B3B;
@@ -236,29 +279,37 @@ body{
     outline: none;
     color: #ffffff;
 }
-.end-body{
+
+.end-body {
     display: flex;
     position: relative;
 }
-.end-body > div{
+
+.end-body > div {
     margin: 0 48px 0 48px;
 }
-.duos p{
+
+.duos p {
     color: #fff;
 }
-.tros p{
+
+.tros p {
     color: #fff;
 }
-.uno{
+
+.uno {
     margin-left: 0 !important;
 }
-.duos{
+
+.duos {
     margin-top: 16px !important;
 }
-.tros{
+
+.tros {
     margin-top: 16px !important;
 }
-.end-body::after{
+
+.end-body::after {
     content: "";
     display: block;
     height: 1px;
@@ -267,7 +318,8 @@ body{
     position: absolute;
     top: 100%;
 }
-.apple{
+
+.apple {
     width: 119px;
     height: 38px;
     background-color: #000000;
@@ -277,7 +329,8 @@ body{
     justify-content: space-around;
     margin-top: 40px;
 }
-.play{
+
+.play {
     width: 135px;
     height: 40px;
     background-color: #000000;
@@ -287,46 +340,54 @@ body{
     justify-content: space-around;
     margin-top: 40px;
 }
-.little{
+
+.little {
     color: #ffffff;
     font-size: 11px;
     display: inline-block;
     margin: 0;
 }
-.big{
+
+.big {
     color: #ffffff;
     font-size: 17px;
     margin: 0;
     display: inline-block;
 }
-.apple img{
+
+.apple img {
     width: 22px;
     height: 22px;
     background-color: #ffffff;
     align-self: center;
 }
-.play img{
+
+.play img {
     width: 22px;
     height: 22px;
     display: inline-block;
     align-self: center;
 }
-.down{
+
+.down {
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-.links{
+
+.links {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 300px;
 }
-.end-links{
+
+.end-links {
     position: relative;
     padding-bottom: 38px;
 }
-.end-links::after{
+
+.end-links::after {
     content: "";
     display: block;
     height: 1px;
@@ -335,15 +396,125 @@ body{
     position: absolute;
     top: 100%;
 }
-.end-end{
+
+.end-end {
     display: flex;
     justify-content: space-between;
 }
-.end-end p{
+
+.end-end p {
     color: #fff;
+}
 
-}    
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container.conthead {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 16px;
+    }
 
+    .navigation button {
+        margin: 8px 0;
+    }
 
+    .show {
+        height: auto;
+        padding: 20px 0;
+    }
 
+    .pushkin {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+
+    .pushkin p {
+        font-size: 24px;
+    }
+
+    .info {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_chose {
+        height: auto;
+        padding: 16px 0;
+    }
+
+    .contmenu {
+        flex-direction: column;
+    }
+
+    .contmenu a {
+        margin: 8px 0;
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-text {
+        margin: 16px 0;
+        text-align: center;
+    }
+
+    .menu-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .end-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .end-body > div {
+        margin: 16px 0;
+    }
+
+    .apple, .play {
+        margin: 16px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logotext {
+        font-size: 20px;
+    }
+
+    .pushkin p {
+        font-size: 20px;
+    }
+
+    .contmenu a {
+        font-size: 14px;
+    }
+
+    .one {
+        font-size: 14px;
+    }
+
+    .three {
+        font-size: 13px;
+    }
+
+    .end-end {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .end-end p {
+        margin: 8px 0;
+    }
+}
