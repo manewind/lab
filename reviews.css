@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.review {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review h2 {
+    color: #ff6f61;
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.review p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.review .rating {
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    header {
+        padding: 15px; /* Уменьшаем отступы в шапке */
+    }
+
+    .container {
+        width: 95%; /* Увеличиваем ширину контейнера для мобильных устройств */
+        margin: 10px auto; /* Уменьшаем отступы */
+    }
+
+    .review {
+        padding: 15px; /* Уменьшаем отступы внутри отзывов */
+    }
+
+    .review h2 {
+        font-size: 1.3em; /* Уменьшаем размер заголовка */
+    }
+
+    .review p {
+        font-size: 0.9em; /* Уменьшаем размер текста */
+    }
+
+    footer {
+        padding: 15px; /* Уменьшаем отступы в футере */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px; /* Еще меньше отступов для маленьких экранов */
+    }
+
+    .container {
+        width: 100%; /* Контейнер занимает всю ширину */
+        margin: 5px auto; /* Минимальные отступы */
+        border-radius: 0; /* Убираем скругление углов */
+    }
+
+    .review {
+        padding: 10px; /* Минимальные отступы внутри отзывов */
+    }
+
+    .review h2 {
+        font-size: 1.2em; /* Еще меньше размер заголовка */
+    }
+
+    .review p {
+        font-size: 0.85em; /* Еще меньше размер текста */
+    }
+
+    footer {
+        padding: 10px; /* Минимальные отступы в футере */
+    }
+}
